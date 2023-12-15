@@ -3,23 +3,9 @@ const suggestions = document.querySelector('.suggestions ul');
 
 const fruit = ['Apple', 'Apricot', 'Avocado 🥑', 'Banana', 'Bilberry', 'Blackberry', 'Blackcurrant', 'Blueberry', 'Boysenberry', 'Currant', 'Cherry', 'Coconut', 'Cranberry', 'Cucumber', 'Custard apple', 'Damson', 'Date', 'Dragonfruit', 'Durian', 'Elderberry', 'Feijoa', 'Fig', 'Gooseberry', 'Grape', 'Raisin', 'Grapefruit', 'Guava', 'Honeyberry', 'Huckleberry', 'Jabuticaba', 'Jackfruit', 'Jambul', 'Juniper berry', 'Kiwifruit', 'Kumquat', 'Lemon', 'Lime', 'Loquat', 'Longan', 'Lychee', 'Mango', 'Mangosteen', 'Marionberry', 'Melon', 'Cantaloupe', 'Honeydew', 'Watermelon', 'Miracle fruit', 'Mulberry', 'Nectarine', 'Nance', 'Olive', 'Orange', 'Clementine', 'Mandarine', 'Tangerine', 'Papaya', 'Passionfruit', 'Peach', 'Pear', 'Persimmon', 'Plantain', 'Plum', 'Pineapple', 'Pomegranate', 'Pomelo', 'Quince', 'Raspberry', 'Salmonberry', 'Rambutan', 'Redcurrant', 'Salak', 'Satsuma', 'Soursop', 'Star fruit', 'Strawberry', 'Tamarillo', 'Tamarind', 'Yuzu'];
 
-//constructor(){
-//this.fruits=[...fruit];//assign list of fruit to fruits variable
-//this.htmlData=document.querySelector("html"); //collecting html data
-//this.bodyData=document.querySelector("body"); //collecting body data
-
-//this.inputVal=document.querySelector("#fruit");//get inputvalue from the searchbar
-//this.suggestionsVal=document.querySelector(".suggestions ul");
-
-//this.inputVal.addEventListener("keyup",this.searchHandler.bind(this));//event would add when the key is pressed
-//this.suggestionsVal=document.addEventListener("click",this.useSuggestion.bind(this));//event would add on click
-//this.htmlData.addEventListener("click", this.useSuggestion.bind(this));//event would add on click
-// this.bodyData.addEventListener("click", this.useSuggestion.bind(this));//event would add on click
-//}
-
 function search(str) {
 	let results = [];
-	console.log("value of stre---->" + str + "\n\n\n");
+
 	//if the strign is empty then return []
 	if (str.length === 0)
 		return [];
